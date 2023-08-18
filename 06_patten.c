@@ -82,7 +82,11 @@
         // column 
         for ( j = 1; j <=i; j++)
         {
-         printf("%d",j);
+            printf("%d",j);
+            if(j=2){
+                break;
+            }
+         
         }
         printf("\n");
         
