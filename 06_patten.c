@@ -1,4 +1,16 @@
- // for(i = 1; i <=5; i++)
+#include<stdio.h>
+ main(){
+    int i,j;
+
+    // for(i=0;i<5;i++){
+    //     printf("*");
+    // }
+    // printf("\n");
+    //  for(i=0;i<5;i++){
+    //     printf("*");
+    // }
+//   row 
+    // for(i = 1; i <=5; i++)
     // {
     //     // column 
     //     for ( j = 1; j <=5; j++)
@@ -58,3 +70,23 @@
         
       
     // }
+  int k;
+    // number 1 12 123 1234 12345
+     for(i = 1; i <=5; i++)
+    {
+        for (k = 5; k>i; k--)
+        {
+           printf(" ");
+        }
+        
+        // column 
+        for ( j = 1; j <=i; j++)
+        {
+         printf("%d",j);
+        }
+        printf("\n");
+        
+      
+    } 
+    
+ }
