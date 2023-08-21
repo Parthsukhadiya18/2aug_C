@@ -31,9 +31,11 @@ int main()
         printf("%d \t", b[i]);
     }
       printf("\n");
+      int c[10];
+      
      for (int i = 0; i < 5; i++)
     {
-        printf("%d \t", a[i]+b[i]);
+        printf("%d \t",  c[i] = a[i]+b[i]);
     }
 
     return 0;
