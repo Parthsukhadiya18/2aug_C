@@ -15,5 +15,6 @@ int main(){
    M1.a =12;
    cout<<M1.a;
    cout<<M1.b;
+    cout<<M1.c;
 
 }
