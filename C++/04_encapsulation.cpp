@@ -1,35 +1,61 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class Emp{
-    private:
-    int salary;
-    string email;
-    public:
-    void setSalary(int s){
-        salary = s;
-    }
-    int getsalary(){
-        return salary;
-    }
-    void setData(string e){
-         email = e;
-    }
-     string getData(){
-        return email;
-     }
+class car
+{
+private:
+    string thery;
+    string petrol;
+    int number;
 
+public:
+    //  void setThery(string t){
+    //   this->thery = t;
+    // }
+    // string getThery(){
+    //     return thery;
+    // }
+    void Car(string t, string p, int n)
+    {
+        this->thery = t;
+        this->petrol = p;
+        this->number = n;
+    }
+    void setThery(string t)
+    {
+        this->thery = t;
+    }
+    string getThery()
+    {
+        return thery;
+    }
+    void setFuel(string p)
+    {
+        this->petrol = p;
+    }
+    string getFuel()
+    {
+        return petrol;
+    }
+    void setNumber(int n)
+    {
+        this->number = n;
+    }
+    int getNumber()
+    {
+        return number;
+    }
 };
-int main(){
-Emp E1;
-Emp E2;
-// cout<<E1.salary;
-E1.setSalary(1000);
-E1.getsalary();
-cout<<E1.getsalary();
-E2.setSalary(2000);
-E2.getsalary();
-cout<<E2.getsalary();
-E1.setData("Parth@gmail.com");
-E1.getData();
-cout<<"\n"<<E1.getData();
+int main()
+{
+    car c1;
+    // c1.setThery("Parth");
+    // c1.getThery();
+    // cout<<c1.getThery();
+    c1.setThery("Engine Detail ");
+    c1.setFuel("petrol");
+    c1.setNumber(123456);
+    c1.getThery();
+    c1.getThery();
+    c1.getNumber();
+    cout << c1.getThery() << c1.getNumber() << c1.getFuel();
 }

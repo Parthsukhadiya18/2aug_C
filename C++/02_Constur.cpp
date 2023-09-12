@@ -1,24 +1,21 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-class My
-{
-public:
-    My()
-    {
-        cout << "Parth";
+class book{
+    public:
+    string  name;
+    int page;
+    //  Messege(){
+    // cout<<" Hello";
+
+    // }
+     book(string n,int p){
+       name=n;
+       page=p;
     }
+
+    
 };
-class Parth
-{
-public:
-    Parth()
-    {
-        cout << "\n Krunal";
-    }
-};
-int main()
-{
-    // objets
-    My M1;
-    Parth P1;
+ main(){
+book b1("english",200);
+cout<<""<<b1.name<<" "<<b1.page;
 }
