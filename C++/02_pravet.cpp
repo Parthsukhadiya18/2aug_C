@@ -1,19 +1,22 @@
 #include<iostream>
 using namespace std;
-class My{
-public:
-int a;
-// private:
-// int s;
-protected:
-int no;
+class Car{
+    private:
+    int balence;
+    public:
+    void  setData(int b){
+         balence = b;
+    }
+    int getData(){
+        return balence;
+    }
+
+
+
 };
 int main(){
-My M1;
-M1.a=12;
-cout<<M1.a;
-// M1.s;
-// cout<<M1.s;
-M1.no =123;
-cout<<M1.no;
+Car C1;
+C1.setData(1000);
+C1.getData();
+cout<<C1.getData();
 }

@@ -1,21 +1,12 @@
 #include<iostream>
 using namespace std;
-class book{
-    public:
-    string  name;
-    int page;
-    //  Messege(){
-    // cout<<" Hello";
-
-    // }
-     book(string n,int p){
-       name=n;
-       page=p;
-    }
-
+class Car{
+  public:
+   Car(){
+    // cout<<"Hello";
     
+   }
 };
- main(){
-book b1("english",200);
-cout<<""<<b1.name<<" "<<b1.page;
+int main(){
+  Car C1;
 }

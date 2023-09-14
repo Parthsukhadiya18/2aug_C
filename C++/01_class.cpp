@@ -1,22 +1,33 @@
 #include<iostream>
 using namespace std;
-int main(){
-    // int a=12, b;
-    // cout<< a <<"\n";
-    // cout<<"Enter b value";
-    // cin>>b;
-    // cout<<"\n sum of A and B "<<a <<"+" <<b <<"="<<a+b;
-    // if(b>10){
-    //    cout<<b;
-    // }else{
-    //    cout<< "enter number" ;
-    // }
-    // for(int i=0;i<5;i++){
-    //    cout<<"\n"<<i;
-    // }
-    // add two value 
-      int a, b;
-    cin>>b>>a;
-    cout<<"a and b sum"<<a<<"+"<<b<<"="<<a+b;
+class Book{
+  public:
+  int a;
+  
 
+  void page(){
+      cout<< "Hello Page!";
+   }
+   int sum(int a, int b){
+       cout<<a+b;
+   }
+
+ int sub(int a, int b){
+       return a-b;
+   }
+   private:
+   string c;
+     protected:
+   string d;
+
+};
+int main(){
+   Book B1;
+   B1.a = 12;
+   cout<<B1.a<<" " ;
+   B1.page();
+   B1.sum(70,1);
+  cout<< B1.sub(10,5);
+  // B1.c={"parth"};
+  //   B1.d={"parth"};
 }
